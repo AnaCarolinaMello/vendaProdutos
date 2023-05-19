@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Header'
 import Main from './components/Main'
+import Pesquisa from './components/Pesquisa'
 import Detalhes from './components/Detalhes'
+import Header from './components/Header'
 
 import {
   Routes,
@@ -17,9 +18,9 @@ function App() {
   return (
     <>
       <Routes>
-        {/* Componente da tela inicial */}
         <Route path='/vendaProdutos' element={<Main />} />
-        {/* Componente de uma rota específica */}
+        <Route path='/vendaProdutos/pesquisa' element={<Pesquisa />} />
+        <Route path='/vendaProdutos/header' element={<Header />} />
         <Route path="/vendaProdutos/delathes/:id?" element={<Detalhes />} />
       </Routes>
     </>
