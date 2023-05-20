@@ -21,7 +21,7 @@ function Main() {
           <div key={produto.id}>
             <img src={produto.image} alt={produto.title} />
             <p>{produto.title}</p>
-            <a href={`/vendaProdutos/delathes/${produto.id}`}>AAAAAAAAAAA</a>
+            <a href={`#/vendaProdutos/delathes/${produto.id}`}>AAAAAAAAAAA</a>
           </div>
         ))}
       </main>
