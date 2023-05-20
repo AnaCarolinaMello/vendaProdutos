@@ -5,10 +5,10 @@ import './App.css'
 import Main from './components/Main'
 import Pesquisa from './components/Pesquisa'
 import Detalhes from './components/Detalhes'
-
 import {
   Routes,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 
 function App() {
