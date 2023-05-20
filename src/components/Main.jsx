@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from './Header'
 
 const api = "https://fakestoreapi.com";
 
@@ -14,6 +15,7 @@ function Main() {
 
   return (
     <>
+    <Header/>
       <main>
         {produtos.map((produto) => (
           <div key={produto.id}>
