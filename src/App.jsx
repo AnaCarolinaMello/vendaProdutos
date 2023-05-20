@@ -5,10 +5,10 @@ import './App.css'
 import Main from './components/Main'
 import Pesquisa from './components/Pesquisa'
 import Detalhes from './components/Detalhes'
+
 import {
   Routes,
-  Route,
-  HashRouter
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='#/vendaProdutos' element={<Main />} />
-        <Route path='#/vendaProdutos/pesquisa' element={<Pesquisa />} />
-        <Route path="#/vendaProdutos/delathes/:id?" element={<Detalhes />} />
+        <Route path='/vendaProdutos' element={<Main />} />
+        <Route path='/vendaProdutos/pesquisa' element={<Pesquisa />} />
+        <Route path="/vendaProdutos/delathes/:id?" element={<Detalhes />} />
       </Routes>
     </>
   )

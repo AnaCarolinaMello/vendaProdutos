@@ -18,7 +18,7 @@ function Header(){
                 <img src={viteLogo}></img>
                 <div className='menu'>
                     <h3 id='home'><a href={`#/vendaProdutos`}>Home</a></h3>
-                    <h3><a href={`#/vendaProdutos/pesquisa`}>Pesquisar</a></h3>
+                    <h3><a href={`/vendaProdutos/pesquisa`}>Pesquisar</a></h3>
                     <h3><a>About</a></h3>
                     <h3><a>Contato</a></h3>
                 </div>
