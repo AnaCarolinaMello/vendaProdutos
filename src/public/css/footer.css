@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: rgb(0, 87, 145);
+}
+
+#divLogo{
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.informacoes{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}

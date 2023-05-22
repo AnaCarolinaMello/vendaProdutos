@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import '../public/css/detalhes.css'
 
 const api = "https://fakestoreapi.com";
 
@@ -14,9 +15,21 @@ function Detalhes() {
       .catch((error) => console.error(error));
   }, []);
   return (
-    <div>
-      <h1>{produto.title}</h1>
-      <img src={produto.image}></img>
+    <div id='detalhes'>
+      <div id='titulo'>
+        <Link to={'/vendaProdutos'}><h2 id='voltar'>&lt; Voltar</h2></Link>
+        <h1 id='produtoTitulo'>{produto.title}</h1>
+      </div>
+      <div id='produto'>
+        <div id='imagem'>
+          <img src={produto.image}></img>
+        </div>
+        <div id='comprar'>
+          <h2>Preço: R$ {produto.price}</h2>
+          <p>{produto.description}</p>
+          <button>Comprar</button>
+        </div>
+      </div>
       <p></p>
     </div>
   );
