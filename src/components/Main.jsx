@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Header'
+import Header from './Header';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
-
+import '../public/css/main.css'
 const api = "https://fakestoreapi.com";
 
 function Main() {
   const [produtos, setProdutos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(api + "/products")
       .then((response) => response.json())
-      .then((data) => setProdutos(data))
+      .then((data) => setProdutos(data),
+      setIsLoading(false))
       .catch((error) => console.error(error));
   }, []);
-
+  
   return (
     <>
     <Header/>
-      <main>
+    <main>
         {produtos.map((produto) => (
           <div key={produto.id}>
             <h3>{produto.title}</h3>
@@ -27,6 +30,7 @@ function Main() {
           </div>
         ))}
       </main>
+      <Footer/>
     </>
   );
 }
