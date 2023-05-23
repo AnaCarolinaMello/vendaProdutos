@@ -20,8 +20,9 @@ function Main() {
       <main>
         {produtos.map((produto) => (
           <div key={produto.id}>
+            <h3>{produto.title}</h3>
             <img src={produto.image} alt={produto.title} />
-            <p>{produto.title}</p>
+            <p>{produto.description}</p>
             <Link to={`/detalhes/${produto.id}`}>AAAAAAAAAAA</Link>
           </div>
         ))}

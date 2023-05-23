@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Header from './Header';
 
 const api = "https://fakestoreapi.com";
 
@@ -14,11 +15,14 @@ function Detalhes() {
       .catch((error) => console.error(error));
   }, []);
   return (
+    <>
+    <Header/>
     <div>
       <h1>{produto.title}</h1>
       <img src={produto.image}></img>
       <p></p>
     </div>
+    </>
   );
 }
 
