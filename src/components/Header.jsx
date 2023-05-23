@@ -6,12 +6,6 @@ import '../public/css/header.css'
 import { Link } from 'react-router-dom';
 
 function Header(){
-    useEffect(() => {
-        fetch("https://fakestoreapi.com/products")
-            .then((response) => response.json())
-            .then((data) => console.log(data))
-            .catch((error) => console.error(error));
-        }, []);
     return(
         <>
             <header>

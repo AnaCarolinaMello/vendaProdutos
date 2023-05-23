@@ -2,12 +2,37 @@
     height: fit-content !important;
 }
 
+#tituloMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 3.5%;
+}
+
+#tituloMain h1{
+    color: white;
+}
+
+#tituloMain select{
+    height: 5vh;
+    width: 20%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 1.5%;
+}
+
+#tituloMain select:focus{
+    outline: transparent;
+}
+
 main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .produtos{

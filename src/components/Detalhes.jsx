@@ -17,7 +17,7 @@ function Detalhes() {
   return (
     <div id='detalhes'>
       <div id='titulo'>
-        <Link to={'/vendaProdutos'}><h2 id='voltar'>&lt; Voltar</h2></Link>
+        <Link to={'/'}><h2 id='voltar'>&lt; Voltar</h2></Link>
         <h1 id='produtoTitulo'>{produto.title}</h1>
       </div>
       <div id='produto'>
