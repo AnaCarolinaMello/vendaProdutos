@@ -15,6 +15,8 @@ function Detalhes() {
       .catch((error) => console.error(error));
   }, []);
   return (
+    <>
+    <Header/>
     <div id='detalhes'>
       <div id='titulo'>
         <Link to={'/'}><h2 id='voltar'>&lt; Voltar</h2></Link>
@@ -32,6 +34,7 @@ function Detalhes() {
       </div>
       <p></p>
     </div>
+    </>
   );
 }
 
